@@ -645,6 +645,83 @@
     }
     .lb-x:hover { background: var(--maroon); }
     /* ══════════════════════════════════════
+       MOBILE RESPONSIVE
+    ══════════════════════════════════════ */
+    @media (max-width: 600px) {
+      .page-wrap { padding: 10px 8px 60px; }
+
+      .hero { padding: 36px 18px 30px; }
+
+      .section { padding: 28px 16px; }
+      .section + .section { padding-top: 0; }
+
+      .divider-wrap { padding: 4px 16px; }
+
+      /* Career card: stack icon above rows */
+      .career-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px;
+      }
+      /* Career rows: stack label above value */
+      .career-item {
+        flex-direction: column;
+        gap: 2px;
+        padding: 8px 0;
+      }
+      .career-key {
+        min-width: unset;
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .career-val { font-size: 0.92rem; font-weight: 400; }
+
+      /* About card */
+      .about-card { padding: 16px; font-size: 0.9rem; }
+
+      /* Hobby tags smaller */
+      .hobby-tag { padding: 6px 12px; font-size: 0.82rem; }
+
+      /* Family meta wrap */
+      .family-meta { gap: 8px; }
+      .family-meta-item { font-size: 0.82rem; padding: 6px 12px; width: 100%; box-sizing: border-box; }
+
+      /* Contact buttons stack on very small */
+      .contact-buttons { gap: 8px; }
+      .btn-phone, .btn-whatsapp { padding: 9px 14px; font-size: 0.82rem; }
+
+      /* Top buttons — smaller on mobile */
+      #lang-btn, #photos-btn {
+        padding: 7px 11px;
+        font-size: 0.76rem;
+        gap: 4px;
+      }
+      .top-btn-group { top: 10px; right: 10px; gap: 6px; }
+
+      /* Print button */
+      #print-btn { padding: 9px 16px; font-size: 0.82rem; bottom: 16px; right: 16px; }
+
+      /* Pref cards */
+      .pref-card { padding: 16px; }
+      .pref-card-body { font-size: 0.85rem; }
+
+      /* Contact cards */
+      .contact-card { padding: 20px 14px; }
+
+      /* Modal inner padding */
+      .modal-inner { padding: 16px; }
+    }
+
+    @media (max-width: 380px) {
+      .top-btn-group { gap: 4px; }
+      #lang-btn, #photos-btn { padding: 6px 9px; font-size: 0.72rem; }
+      .section { padding: 22px 12px; }
+      .career-card { padding: 12px; }
+    }
+
+    /* ══════════════════════════════════════
        PRINT STYLES
     ══════════════════════════════════════ */
     @media print {
